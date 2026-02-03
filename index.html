@@ -17,11 +17,28 @@
         </section>
         <section>
             <!-- this section is for playing with srcset -->
-            <img src="images/puppy-1.0.jpg" alt="A white puppy standing in short grass">
+             <!-- srcset lets you provide multiple images, and the browser can choose the right one based on the conditions you give -->
+            <img srcset="images/puppy-2.0.jpg 2x,
+                         images/puppy-3.0.jpg 3x"
+             src="images/puppy-1.0.jpg" alt="A white puppy standing in short grass">
+             <!--  the above x means pizel density, depending on the device you are using -->
         </section>
 
         <section class="test2">
           <!-- this section is for playing with sizes-->
+           <img srcset="
+           images/puppy-1.0.jpg 1000w,
+           images/puppy-2.0.jpg 2000w, 
+           images/puppy-3.0.jpg 3000w"
+
+           sizes="
+           (min-width:900px) 66.6vw
+           (max-width:1200px) 3.33vw"
+
+           src="images/puppy-1.0.jpg" alt="a white puppy standing in short grass">
+
+           <!-- the sizes set how wide the image is in your browser, telling it to respond based on changing  -->
+                       
 
         </section>
 
