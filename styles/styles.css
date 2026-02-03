@@ -2,6 +2,20 @@
 .back-sizer{
     height:600px;
     border:2px solid black;
+    background-image: url(../images/puppy-full.jpg);
+    /* contain makes the whole backround image fit inside the element cover ensure the background image covers the entire element */
+    background-size: 150%;
+    /* with backround size you can also set a specific size in px or em or other units 
+    with background size you can also enter two values (horizontal size then verticle size) but this risks sxaling the image out of ratio*/
+    background-position: 70% center;
+
+    /* background position lets you change which part of the image is visible, or change the anchor point */
+    /* you can use a relative position, like center, left, right, top, or bottom
+    
+    you can also set a specific position using px or % or other units the order is horizontal position, verticle position*/
+
+    /* background repeat controls how the image repeats */
+    background-repeat: no-repeat;
 }
 
 .test2 img{
